@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:focusable="true"
+    android:clickable="true"
+    android:background="@drawable/student_asistance_bg"
+    android:layout_height="50dp">
+
+    <TextView
+        android:id="@+id/fecha"
+        tools:text="29 feb. 2023"
+        android:textSize="20sp"
+        android:layout_marginStart="20dp"
+        android:gravity="center_vertical"
+        android:layout_weight="1.5"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:id="@+id/presentes"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:gravity="center_vertical|end"
+        tools:text="Presentes: 2s4"
+        android:layout_height="match_parent"/>
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="1dp"
+        android:layout_margin="10dp"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:id="@+id/aucentes"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:gravity="center_vertical"
+        android:layout_height="match_parent"
+        tools:text="Aucentes: 4"/>
+</LinearLayout>

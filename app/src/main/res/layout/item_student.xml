@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+    <TextView
+        android:id="@+id/index_edit"
+        android:layout_marginStart="10dp"
+        android:minWidth="40dp"
+        android:maxWidth="100dp"
+        android:textSize="18sp"
+        tools:text="1"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:background="@drawable/edit_text_blank"
+        android:layout_height="match_parent"/>
+    <EditText
+        android:id="@+id/name"
+        android:hint="@string/name"
+        tools:text="Adrian Jesus Garcia Dominguez Adrian Jesus Garcia Dominguez"
+        android:layout_weight="1"
+        android:singleLine="true"
+        android:inputType="textPersonName"
+        android:background="@drawable/edit_text_blank"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:layout_marginEnd="5dp"
+        android:gravity="center_vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:importantForAutofill="no" />
+    <ImageView
+        android:id="@+id/cell"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/smartphone"
+        android:layout_width="50dp"
+        android:padding="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_height="50dp"
+        android:contentDescription="@string/phone_number" />
+</LinearLayout>

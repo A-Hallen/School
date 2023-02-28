@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:padding="20dp"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:background="@color/black"
+    tools:context=".ui.login.RegisterFragment">
+
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceListItem"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_marginBottom="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/soft_gray"
+        android:paddingStart="10dp"
+        android:autofillHints="Nombre de usuario"
+        android:paddingEnd="10dp"
+        android:background="@drawable/edit_text_bg"
+        style="@style/MarginEdit"
+        android:layout_width="match_parent"
+        android:hint="@string/email"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:textColorHint="@color/soft_gray"
+        android:autofillHints="Contraseña"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:inputType="textPassword"
+        android:background="@drawable/edit_text_bg"
+        style="@style/MarginEdit"
+        android:layout_width="match_parent"
+        android:hint="@string/password" />
+
+    <TextView
+        android:id="@+id/register_button"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:clickable="true"
+        android:focusable="true"
+        android:textSize="17sp"
+        android:layout_marginBottom="40dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/round_corner_button"
+        android:layout_height="75dp"
+        android:text="@string/register"/>
+
+    <LinearLayout
+        android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceListItem"
+            android:textColor="@color/white"
+            android:id="@+id/forgot_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:textIsSelectable="false"
+            tools:text="@string/forgot_pass"/>
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceListItem"
+            android:textColor="@color/white"
+            android:id="@+id/already_account"
+            android:layout_marginStart="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:textIsSelectable="false"
+            tools:text="@string/login"/>
+
+    </LinearLayout>
+    <com.hallen.school.ui.CircularImageView
+        app:src="@drawable/ic_google"
+        android:id="@+id/sign_google"
+        android:layout_width="40dp"
+        android:layout_height="40dp"/>
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="64dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/password"
+        app:layout_constraintStart_toStartOf="@+id/password"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3" />
+</LinearLayout>

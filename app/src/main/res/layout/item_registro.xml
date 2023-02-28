@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/student_asistance_bg"
+    android:layout_marginStart="10dp"
+    android:focusable="true"
+    android:clickable="true"
+    android:id="@+id/container_registro"
+    android:layout_marginEnd="10dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/index_edit"
+            android:textSize="18sp"
+            tools:text="1"
+            android:gravity="center"
+            android:textColor="@color/grey"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/name"
+            tools:text="Adrian Jesus Garcia Dominguez Adrian Jesus Garcia Dominguez"
+            android:layout_weight="2"
+            android:paddingStart="5dp"
+            android:maxLines="2"
+            android:paddingEnd="5dp"
+            android:gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:importantForAutofill="no" />
+        <TextView
+            android:id="@+id/nota_promedio"
+            android:layout_weight="1"
+            tools:text="Nota Promedio"
+            android:layout_width="0dp"
+            android:paddingStart="5dp"
+            android:gravity="center"
+            android:paddingEnd="5dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/ausencias"
+            android:layout_weight="1"
+            tools:text="% Ausencias"
+            android:layout_width="0dp"
+            android:paddingStart="5dp"
+            android:gravity="center"
+            android:paddingEnd="5dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"/>
+
+</LinearLayout>

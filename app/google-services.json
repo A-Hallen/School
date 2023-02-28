@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "230093155440",
+    "firebase_url": "https://school-e8de3-default-rtdb.firebaseio.com",
+    "project_id": "school-e8de3",
+    "storage_bucket": "school-e8de3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:230093155440:android:5cbf7a562bc4de946358b5",
+        "android_client_info": {
+          "package_name": "com.hallen.school"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "230093155440-o218cqh0bfi36ooqbar1svtjsvbegkeq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hallen.school",
+            "certificate_hash": "9efd30dca9e006969dafe320c65565acfda56948"
+          }
+        },
+        {
+          "client_id": "230093155440-642r96vjta01e0s3mhkteq8e7t942tqg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC62HpPjyVdGLvYEv3nScs4gFesVeDKSiA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "230093155440-642r96vjta01e0s3mhkteq8e7t942tqg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_height="match_parent"
+    android:layout_weight="1">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:orientation="horizontal"
+        android:background="@color/cardview_dark_background">
+        <ImageView
+            android:id="@+id/hamburger_icon"
+            android:layout_marginStart="7dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:src="@drawable/hemburger_icon"
+            android:gravity="center"
+            android:contentDescription="@string/hamburger_icon"/>
+        <Space
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_marginStart="4dp"
+            android:layout_height="match_parent"/>
+        <com.hallen.school.ui.CircularImageView
+            android:id="@+id/avatar_mini"
+            app:padding="5dp"
+            android:layout_gravity="center"
+            android:layout_width="50dp"
+            android:layout_marginEnd="5dp"
+            android:scaleType="centerCrop"
+            android:layout_height="50dp"/>
+    </LinearLayout>
+
+</LinearLayout>
