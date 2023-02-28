@@ -37,14 +37,13 @@ class CircularImageView @JvmOverloads constructor(
                 .setDuration(0)
                 .scaleX(2f).scaleY(2f)
                 .setListener(object : Animator.AnimatorListener{
-                override fun onAnimationEnd(animation: Animator?)    {
-                    endAnimation(bgView)
-                }
-                override fun onAnimationStart(animation: Animator?)  {  }
-                override fun onAnimationCancel(animation: Animator?) {  }
-                override fun onAnimationRepeat(animation: Animator?) {  }
-
-            })
+                    override fun onAnimationEnd(p0: Animator) {
+                        endAnimation(bgView)
+                    }
+                    override fun onAnimationStart(p0: Animator) {   }
+                    override fun onAnimationCancel(p0: Animator) {  }
+                    override fun onAnimationRepeat(p0: Animator) {  }
+                })
         }
     }
 
@@ -55,14 +54,13 @@ class CircularImageView @JvmOverloads constructor(
             animate()
                 .alpha(0f)
                 .setDuration(short).setListener(object : Animator.AnimatorListener{
-                override fun onAnimationEnd(animation: Animator?) {
-                    visibility = View.GONE
-                }
-                override fun onAnimationStart(animation: Animator?)  {  }
-                override fun onAnimationCancel(animation: Animator?) {  }
-                override fun onAnimationRepeat(animation: Animator?) {  }
-
-            })
+                    override fun onAnimationEnd(p0: Animator) {
+                        visibility = View.GONE
+                    }
+                    override fun onAnimationStart(p0: Animator) {   }
+                    override fun onAnimationCancel(p0: Animator) {  }
+                    override fun onAnimationRepeat(p0: Animator) {  }
+                })
         }
     }
 

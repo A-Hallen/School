@@ -11,6 +11,7 @@ class PagerAdapter(fragmentManager: FragmentManager, lifecycle: Lifecycle): Frag
     override fun createFragment(position: Int): Fragment {
         return when(position){
             0 -> FragmentHorario()
+            1 -> FragmentEvents()
             else -> FragmentHorario()
         }
 
