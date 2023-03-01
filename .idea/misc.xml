@@ -64,6 +64,7 @@
         <entry key="app/src/main/res/drawable/smartphone.xml" value="0.169" />
         <entry key="app/src/main/res/drawable/student_asistance_bg.xml" value="0.18" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_recordatorio.xml" value="0.21510416666666668" />
         <entry key="app/src/main/res/layout/activity_result.xml" value="0.43020833333333336" />
         <entry key="app/src/main/res/layout/activity_welcome.xml" value="0.18" />
         <entry key="app/src/main/res/layout/bubble_menu_design.xml" value="0.5" />
@@ -72,14 +73,16 @@
         <entry key="app/src/main/res/layout/date_picker_dialog.xml" value="0.33" />
         <entry key="app/src/main/res/layout/day.xml" value="0.33" />
         <entry key="app/src/main/res/layout/dialog_group_name.xml" value="0.21510416666666668" />
+        <entry key="app/src/main/res/layout/dialog_new_event.xml" value="0.25" />
         <entry key="app/src/main/res/layout/dialog_note.xml" value="0.23489583333333333" />
         <entry key="app/src/main/res/layout/dialog_phone_number.xml" value="0.21510416666666668" />
+        <entry key="app/src/main/res/layout/event_list_item.xml" value="0.4956140350877193" />
         <entry key="app/src/main/res/layout/fecha_bg.xml" value="0.2140625" />
         <entry key="app/src/main/res/layout/fragment_asistance_resumen.xml" value="0.21510416666666668" />
-        <entry key="app/src/main/res/layout/fragment_asistence.xml" value="0.4714611872146119" />
+        <entry key="app/src/main/res/layout/fragment_asistence.xml" value="0.37524557956778" />
         <entry key="app/src/main/res/layout/fragment_create_group.xml" value="0.33" />
         <entry key="app/src/main/res/layout/fragment_days.xml" value="0.22" />
-        <entry key="app/src/main/res/layout/fragment_events.xml" value="0.19270833333333334" />
+        <entry key="app/src/main/res/layout/fragment_events.xml" value="0.33" />
         <entry key="app/src/main/res/layout/fragment_horario.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_login.xml" value="0.21510416666666668" />
         <entry key="app/src/main/res/layout/fragment_register.xml" value="0.22" />
@@ -99,6 +102,7 @@
         <entry key="app/src/main/res/layout/yes_or_no_dialog.xml" value="0.5" />
         <entry key="app/src/main/res/menu/avatar_mini.xml" value="0.21510416666666668" />
         <entry key="app/src/main/res/menu/menu_group_options.xml" value="0.369140625" />
+        <entry key="app/src/main/res/menu/simple_delete_menu.xml" value="0.21510416666666668" />
       </map>
     </option>
   </component>

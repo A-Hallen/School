@@ -17,4 +17,8 @@
     <color name="transparent">#00FFFFFF</color>
     <color name="red">#FF1100</color>
     <color name="grey">#808080</color>
+
+    <color name="alta">#D50000</color>
+    <color name="media">#2962FF</color>
+    <color name="baja">#64DD17</color>
 </resources>

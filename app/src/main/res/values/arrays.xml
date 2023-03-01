@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="themeColors" >
+        <item>@color/red_500</item>
+        <item>@color/green_500</item>
+        <item>@color/blue_500</item>
+        <item>@color/cyan_500</item>
+        <item>@color/teal_500</item>
+        <item>@color/pink_400</item>
+        <item>@color/purple_400</item>
+        <item>@color/orange_500</item>
+        <item>@color/yellow_500</item>
+        <item>@color/lime_500</item>
+
+    </string-array>
+    <string-array name="themeColorHex">
+        <item>#D50000</item>
+        <item>#C51162</item>
+        <item>#AA00FF</item>
+        <item>#6200EA</item>
+        <item>#304FFE</item>
+        <item>#00B8D4</item>
+        <item>#26FF00</item>
+        <item>#FFD600</item>
+        <item>#FF6D00</item>
+        <item>#EEFF00</item>
+    </string-array>
+</resources>

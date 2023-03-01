@@ -138,6 +138,7 @@ class FragmentHorario : Fragment() {
             MaterialColorPickerDialog
                 .Builder(requireContext())
                 .setTitle("Escoge un color para la clase")
+                .setColorRes(resources.getIntArray(R.array.themeColors))
                 .setColorListener(object : ColorListener{
                     override fun onColorSelected(color: Int, colorHex: String) {
                         colorView.setBackgroundColor(color); claseColor = colorHex
