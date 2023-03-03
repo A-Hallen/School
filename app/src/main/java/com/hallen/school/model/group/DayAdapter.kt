@@ -12,8 +12,8 @@ import java.text.SimpleDateFormat
 
 class DayAdapter(
     val days: ArrayList<String>,
-    val presentes: MutableMap<String, Int>,
-    val matricula: Int
+    private val presentes: MutableMap<String, Int>,
+    private val matricula: Int
 ): RecyclerView.Adapter<DayAdapter.ViewHolder>() {
     private val dateFormat = SimpleDateFormat("dd-MM-yyyy")
 
@@ -33,13 +33,12 @@ class DayAdapter(
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val currentItem = days[position]
-        val fecha = currentItem
-        val coolFecha = dateFormat.parse(fecha)
+        val coolFecha = dateFormat.parse(currentItem)
 
-        holder.fechaTextView.text = if (coolFecha == null) fecha else {
+        holder.fechaTextView.text = if (coolFecha == null) currentItem else {
             DateFormat.getDateInstance().format(coolFecha)
         }
-        val presents = presentes[fecha]
+        val presents = presentes[currentItem]
         val aucentes = matricula - (presents ?: 0)
 
         holder.presentes.text = "presentes: " + (presents ?: "0").toString()

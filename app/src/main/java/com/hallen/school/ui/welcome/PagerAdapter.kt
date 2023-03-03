@@ -12,6 +12,7 @@ class PagerAdapter(fragmentManager: FragmentManager, lifecycle: Lifecycle): Frag
         return when(position){
             0 -> FragmentHorario()
             1 -> FragmentEvents()
+            2 -> FragmentNotas()
             else -> FragmentHorario()
         }
 

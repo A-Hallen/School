@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.welcome.FragmentNotas">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/notas_recycler_view"
+        android:background="@color/white"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/new_note"
+        app:elevation="20dp"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_new_note"
+        android:layout_gravity="end|bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="Nueva Nota" />
+    <LinearLayout
+        android:id="@+id/edit_note"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/edit_header"
+            android:background="@color/cardview_dark_background"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <com.hallen.school.ui.CircularImageView
+                android:id="@+id/notas_back"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                app:src="@drawable/ic_back"
+                app:padding="10dp"
+                android:layout_margin="5dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+            <Space
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="0dp"/>
+            <TextView
+                android:id="@+id/guardar_nota"
+                android:text="Guardar"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_width="wrap_content"
+                android:textColor="@color/white"
+                android:layout_margin="5dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:elevation="5dp"
+                android:background="@drawable/fecha_bg"
+                android:gravity="center_vertical"
+                android:textSize="15sp"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edit_note_title"
+            android:hint="@string/titulo"
+            android:inputType="textPersonName"
+            android:textSize="25sp"
+            android:textCursorDrawable="@drawable/cursor_drawable"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:padding="20dp"
+
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/edit_note_content"
+            android:textCursorDrawable="@drawable/cursor_drawable"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="start"
+            android:hint="@string/notas"
+            android:inputType="textMultiLine"
+            android:importantForAutofill="no"
+            android:paddingStart="20dp"
+            android:paddingTop="20dp"
+            android:paddingEnd="20dp"
+            android:textSize="18sp" />
+    </LinearLayout>
+</FrameLayout>

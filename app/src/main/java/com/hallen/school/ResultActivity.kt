@@ -23,10 +23,10 @@ import com.google.firebase.database.*
 import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.ktx.storage
 import com.hallen.school.databinding.ActivityResultBinding
+import com.hallen.school.model.group.AsistancePageAdapter
 import com.hallen.school.ui.CircularImageView
 import com.hallen.school.ui.CreateGroup
 import com.hallen.school.ui.GroupV
-import com.hallen.school.model.group.AsistancePageAdapter
 import com.hallen.school.ui.welcome.PagerAdapter
 import java.io.ByteArrayOutputStream
 import java.io.InputStream
@@ -54,7 +54,7 @@ class ResultActivity : AppCompatActivity() {
     }
 
     private fun loadHome() {
-        val fragmentsArray = arrayOf("Horario", "Eventos", "Some")
+        val fragmentsArray = arrayOf("Horario", "Eventos", "Notas")
         binding.welcomeScreen.pager.adapter = homeAdapter
         TabLayoutMediator(binding.welcomeScreen.tabLayout, binding.welcomeScreen.pager){  tab, position ->
             tab.setCustomView(R.layout.tab_custom_view)

@@ -21,7 +21,9 @@ import com.google.firebase.database.ValueEventListener
 import com.hallen.school.databinding.FragmentRegistroBinding
 import com.hallen.school.model.group.AdapterRegistro
 import com.hallen.school.model.group.LineChartXAxisFormater
+import com.hallen.school.model.group.MyValueFormatter
 import com.hallen.school.model.group.StudentData
+import com.orhanobut.logger.Logger
 import java.text.DateFormat
 import java.text.SimpleDateFormat
 
@@ -108,12 +110,15 @@ class FragmentRegistro(private val group: DatabaseReference) : Fragment() {
                             val xnew = (date.time - lineChartXAxisFormater.originalTimestamp).toFloat()
                             val entry = Entry(xnew, note)
                             lineList.add(entry)
-                        } catch (e: Exception) {  throw e; continue    }
+                            Logger.i("$name: ${DateFormat.getDateInstance().format(date)} ----- $note")
+                        } catch (e: Exception) { e.printStackTrace(); throw e; continue    }
 
 
                     }
+                    lineList.sortBy { it.x } // Ordena los elementos de la lista.
                     var lineDataSet = LineDataSet(lineList, "Notas")
                     var lineData = LineData(lineDataSet)
+                    lineData.setValueFormatter(MyValueFormatter())
                     binding.grafica.data = lineData
                     binding.grafica.axisLeft.granularity = 1.0f
                     binding.grafica.axisRight.granularity = 1.0f
@@ -126,6 +131,7 @@ class FragmentRegistro(private val group: DatabaseReference) : Fragment() {
                     binding.grafica.extraTopOffset = 10f
                     binding.grafica.description = Description().also {  it.text = name.toString()   }
                     binding.grafica.xAxis.valueFormatter = lineChartXAxisFormater
+
                     //lineDataSet.setColors(*ColorTemplate.JOYFUL_COLORS)
                     lineDataSet.valueTextColor = Color.BLUE
                     lineDataSet.valueTextSize = 20f

@@ -66,4 +66,5 @@
     <string name="eliminar_template">Estás seguro de eliminar %1$s?</string>
     <string name="new_notification">Nueva notificación</string>
     <string name="delete">Eliminar</string>
+    <string name="titulo">Título</string>
 </resources>
